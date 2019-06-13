@@ -1,0 +1,30 @@
+*{
+    margin:0;
+    padding:0;
+}
+header{
+    background:url(../images/header-bg.png) repeat;
+    height: 100px;
+}
+
+/* HEADER-TOP */
+
+.header-top{
+    width:93%;
+    height: 100%;
+}
+.soc-icons>img{
+    margin-left: 25px;
+}
+
+/* END HEADER-TOP */
+
+/* HEADER-BOTTOM */
+.header-bottom-wrapper{
+    width: 100%;
+    background: #40312a;
+}
+.header-bottom{
+    width: 93%;
+    height: 58px;
+}
