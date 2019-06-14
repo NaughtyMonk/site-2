@@ -25,6 +25,36 @@ header{
     background: #40312a;
 }
 .header-bottom{
+    font:;
     width: 93%;
     height: 58px;
 }
+@media screen and (max-width:991px){
+    .header-bottom{
+        height: 200px;
+    }
+}
+.header-bottom a:hover{
+    color:#2c8897 !important;
+}
+
+#search{
+    border:solid black 1px;
+    height: 25px;
+    width: 190px;
+    background-image: -webkit-gradient(linear, 0% 0%, 0% 100%,color-stop(0, rgb(8, 123, 149)),color-stop(1, rgb(62, 169, 192)));
+        /* Android 2.3 */
+    background-image: -webkit-repeating-linear-gradient(top,rgb(8, 123, 149) 0%,rgb(62, 169, 192) 100%);
+        /* IE10+ */
+    background-image: repeating-linear-gradient(to bottom,rgb(8, 123, 149) 0%,rgb(62, 169, 192) 100%);
+    background-image: -ms-repeating-linear-gradient(top,rgb(8, 123, 149) 0%,rgb(62, 169, 192) 100%);
+    background:#2392ab url(../icons/search.png) no-repeat 155px center; 
+}
+@media screen and (max-width:991px){
+    .search-form{
+        display: none;
+    }
+}
+
+
+    
