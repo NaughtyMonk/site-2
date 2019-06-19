@@ -149,8 +149,9 @@ box-shadow: 2px 10px 12px -9px rgba(0,0,0,0.75);
 
 /* BLOG */
 .site-inform{
-    height: 770px;
+    height: 800px;
     background:#f8eedf;
+    border-bottom: #b2988d solid 1px;
 }
 .blog{
     width: 62%;
@@ -160,28 +161,34 @@ box-shadow: 2px 10px 12px -9px rgba(0,0,0,0.75);
     width: 89%;
     height: 87%;
 }
-.blog h4{
+h4{
     color:#267688;
-    font-family:'Cambria Math';
-    font-weight: bold;
+    font:24px 'Cambria Math';
+    font-weight: 550;
+    margin-bottom: 0;
 }
 .blog h3{
-    margin-top: 20px;
-    font-family: 'Candara';
+    margin: 25px 0 0 0;
+    font:30px 'Candara';
 }
 .blog p{
-    font-size: 13px;
+    font: 12px 'Verdana';
+    margin: 5px 0 0 0;
+}
+.blog button{
+    margin-top:45px;
 }
 .blog a{
-    font-family: 'Cambria';
+    font:13px 'Cambria';
     font-style: italic;
     font-weight: 500;
     color:#ce953c ;
 }
 .blog img{
-    max-width: 550px;
-    max-height: 140px;
-    margin: 15px 0;
+    width: 100%;
+    max-height: 180px;
+    /* max-height: 140px; */
+    margin: 10px 0;
 }
 .wrapper-blog>p>a{
     font-size: 12px;
@@ -200,6 +207,9 @@ box-shadow: 2px 10px 12px -9px rgba(0,0,0,0.75);
     background: rgb(81,66,59);
     background: linear-gradient(180deg, rgba(81,66,59,1) 56%, rgba(65,50,43,1) 100%);
 }
+
+/* END BLOG */
+/* LINE BLOG-SIDEBAR */
 .line-light{
     width: 1px;
     height: 100%;
@@ -212,6 +222,10 @@ box-shadow: 2px 10px 12px -9px rgba(0,0,0,0.75);
     background: rgb(223,205,178);
     background: linear-gradient(180deg, rgba(223,205,178,1) 42%, rgba(0,211,254,0) 100%);
 }
+/* END LINE BLOG SIDEBAR */
+
+
+/* SIDEBAR */
 .sidebar{
     height: 100%;
     width: 38%;
@@ -220,4 +234,240 @@ box-shadow: 2px 10px 12px -9px rgba(0,0,0,0.75);
 }
 .wrapper-sidebar{
     height: 87%;
+    width: 81%;
+    /* outline: #40312a solid 1px; */
+}
+/* Базовый контейнер табов */
+.tabs {
+    color:white;
+	padding: 0px;
+    /* margin-top: 50px; */
+    text-align: center;
+}
+/* Стили секций с содержанием */
+.tabs>section {
+    /* border:#40312a solid 1px; */
+    display: none;
+    text-align: left;
+    padding: 15px 15px;
+}
+
+.tabs>section>p {
+    
+	margin: 0 0 5px;
+    line-height: 1.5;
+    font: 12px 'Verdana';
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	-webkit-animation-name: fadeIn;
+	animation-name: fadeIn;
+}
+/* Описываем анимацию свойства opacity */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+/* Прячем чекбоксы */
+.tabs>input {
+	display: none;
+	position: absolute;
+}
+/* Стили переключателей вкладок (табов) */
+.tabs>label {
+    /* width: 33.3%; */
+    /* border: #2a8394 solid 1px; */
+    display: inline-block;
+    font-family: 'Cabrine Math';
+    margin-bottom: 0px;
+	padding: 15px 15px;
+	font-weight: 500;
+	text-align: center;
+    background: #40312a;
+    border-bottom:solid 1px  #2a8394;
+    -webkit-box-shadow: 0px 0px 0px 1px #40312a; 
+    box-shadow: 0px 1px 0px 0px #40312a;
+}
+/* Изменения стиля переключателей вкладок при наведении */
+ 
+.tabs>label:hover {
+	cursor: pointer;
+}
+/* Стили для активной вкладки */
+.tabs>input:checked+label {
+    /* -webkit-box-shadow:1px 0px 0px 0px #2a8394;  */
+    box-shadow: none;
+	background: #2a8394;
+}
+/* Активация секций с помощью псевдокласса :checked */
+#tab1:checked~#content-tab1, #tab2:checked~#content-tab2, #tab3:checked~#content-tab3 {
+	display: block;
+}
+/* .tabs-line{
+    border-top:#134a56 solid 1px;
+    border-bottom: #3196af solid 1px;
+} */
+.tab-top{
+    border-bottom: #134a56 solid 1px;
+    height: 65px;
+    
+}
+.tab-bottom{
+    border-top:#3196af solid 1px;
+    height: 95px;
+}
+
+.tabs-border{
+    margin-bottom: 40px;
+    background: #2a8394;
+}
+.sidebar-img{
+    margin-top:30px;
+}
+.sidebar-img>img{
+    max-height: 130px;
+}
+.wrapper-sidebar>p{
+    margin:20px 0 50px 0;
+    font: 12px 'Verdana';
+}
+.wrapper-sidebar>p>a{
+    font-size: 12px;
+    font-style:normal;
+    font-weight: bold; 
+    font-family: 'Verdana';
+    color:#247184;
+}
+.sponsors>img{
+    margin-top:30px;
+    max-width: 140px;
+}
+.footer-wrapper-top{
+    border-top:solid 1px #b2988d;
+    height: 415px;
+    background: rgb(64,49,42);
+    background: linear-gradient(189deg, rgba(64,49,42,1) 11%, rgba(58,44,37,1) 50%);
+}
+.footer-top{
+    width: 94%;
+    /* height: 77%; */
+}
+.footer-contact{
+    width: 33%;
+    /* padding-right: 4%; */
+    height: 77%;
+}
+.footer-recent-projects{
+    position: relative;
+    margin: 0 7%;
+    width: 33%;
+    /* padding:0 4%; */
+    height: 77%;
+}
+
+.footer-contact{
+    position: relative;
+}
+.footer-contact>form{
+    margin-top:25px;
+}
+.footer-contact>form>input, .footer-textarea{
+    color: #247184;
+    background: #f8eedf;
+    padding: 0 10px;
+    border: none;
+    border-radius: 2px;
+    -webkit-box-shadow: inset -4px 6px 15px -6px #000000; 
+    box-shadow: inset 0px 3px 15px -6px #000000;
+}
+.footer-contact>form>input::placeholder, .footer-textarea::placeholder{
+    color: #247184;
+}
+.footer-textarea{
+    /* width: 270px; */
+    height: 112px;
+    margin:13px 0;
+    resize: none;
+}
+.footer-input-name{
+    width: 40%;
+    height: 38px;
+    margin-right:6px;
+}
+.footer-input-last-name{
+    width: 57%;
+    height: 38px;
+}
+.footer-email{
+    height: 38px;
+}
+.footer-btn{
+    width: 42%;
+    /* height: 32px; */
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    background:url(../images/header-bg.png);
+    color:white;
+}
+.footer-images{
+    margin-top:25px;
+}
+.footer-images>img:nth-child(-n+2) {
+    margin-bottom: 10%;
+} 
+.tweeter-stream{
+    position: relative;
+    width: 33%;
+    font:12px 'Verdana';
+    height: 77%;
+    color: white;
+}
+.footer-text{
+    margin-top: 25px;
+}
+.footer-text>p{
+    margin:0;
+    padding: 13px 0;
+}
+.tweeter-stream a{
+    color: #34727b;
+    text-decoration: none;
+    font:12px 'Verdana';
+}
+.footer-wrapper-bottom{
+    border-top: #38a4b6;
+    height: 66px;
+    background: rgb(44,135,151);
+    background: linear-gradient(189deg, rgba(44,135,151,1) 11%, rgba(43,139,156,1) 63%);
+}
+.footer-bottom{
+    width: 94%;
+}
+.footer-bottom>p{
+    color: white;
+    font: 13px 'Cambria Math';
+    margin:0;
+}
+.footer-bottom>nav>a{
+    padding: 0 6px;
+    color: white;
+    font: 13px 'Cambria Math';
+    border-right: 1px solid white;
+}
+.footer-bottom>nav>a:nth-last-child(1){
+    border-right: none;
 }

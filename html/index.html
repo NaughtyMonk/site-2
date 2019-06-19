@@ -97,7 +97,6 @@
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                 Tenetur animi blanditiis rem facilis nulla porro repudiandae
                                 aperiam quas hic veritatis delectus, maxime earum 
-                                illo ipsum inventore officiis provident, ullam quod?
                             </p>
                             <button class="btn text-uppercase">learn more</button>
                             <button class="btn text-uppercase">our work</button>
@@ -160,11 +159,129 @@
                 <div class="line-light"></div>
                 <div class="line-dark"></div>
             <section class="sidebar d-flex justify-content-center">
-                <div class="wrapper-sidebar align-self-center">
-
+                <div class="wrapper-sidebar align-self-center r">
+                    <div class="tabs d-flex flex-wrap tabs-border rounded">
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1" title="Вкладка 1" class="flex-fill tab1 rounded-left">Comments</label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2" title="Вкладка 2"class="flex-fill">Categories</label> 
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3" title="Вкладка 3" class="flex-fill rounded-right">Archives</label>
+                        <section id="content-tab1" class="w-100  tab-top">
+                        <p>
+                            Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, 
+                            vel illum dolore eu feugiat nulla 
+                        </p>
+                        </section>  
+                        <!-- <div class="tabs-line w-100"></div> -->
+                        <section id="content-tab1" class="w-100 tab-bottom">
+                            <p>
+                                Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, 
+                                vel illum dolore eu feugiat 
+                            </p>
+                        </section>  
+                        <section id="content-tab2" class="w-100 tab-top">
+                            <p>
+                                Здесь размещаете любое содержание....
+                            </p>
+                        </section> 
+                        <!-- <div class="tabs-line w-100"></div> -->
+                        <section id="content-tab2" class="w-100 tab-bottom">
+                            <p>
+                                Здесь размещаете любое содержание....
+                            </p>
+                        </section> 
+                        <section id="content-tab3" class="w-100 tab-top">
+                            <p>
+                                Здесь размещаете любое содержание....
+                            </p>
+                        </section>
+                        <!-- <div class="tabs-line w-100"></div> -->
+                        <section id="content-tab3" class="w-100 tab-bottom">
+                            <p>
+                                Здесь размещаете любое содержание....
+                            </p>
+                        </section>
                 </div>
+                <h4 class="text-uppercase">who we are</h4>
+                <div class="sidebar-img">
+                    <img src="../images/sidebar.png" class="w-100">
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. , consectetur adipisicing elit... 
+                <a href="#">Read More!</a>
+                </p>
+                <h4 class="text-uppercase">sponsors</h4>
+                <div class="sponsors d-flex justify-content-between">
+                    <img src="../images/Adidas-Logo.png" class="flex-fill">
+                    <img src="../images/line.png" class="line-sponsor h-50 align-self-center">
+                    <img src="../images/Nike-logo.png" class="flex-fill">
+                </div>
+            </div>
             </section>
         </section>
     </main>
+    <footer>
+        <section class="footer-wrapper-top w-100">
+            <div class="footer-top d-flex mx-auto h-100">
+                <div class="footer-contact flex-fill align-self-center">
+                    <h4 class="text-uppercase">get a free quote</h4>
+                    <form class="d-flex justify-content-between flex-wrap">
+                        <input class="footer-input-name" placeholder="Your Name" type="text" maxlength="15">
+                        <input class="footer-input-last-name" placeholder="Last Name" type="text" maxlength="15">
+                        <textarea class="footer-textarea w-100" placeholder="Bla Bla" maxlength="35"></textarea>
+                        <input class="footer-email w-100" placeholder="Your E-mail adress" type="text" maxlength="15">
+                    </form>
+                    <button class="btn footer-btn" type="submit">SUBMIT</button>
+                </div>
+                <div class="footer-recent-projects flex-fill align-self-center">
+                        <h4 class="text-uppercase">our recent projects</h4>
+                        <div class="d-flex flex-wrap footer-images justify-content-between">
+                            <img src="../images/wallpapers mix 157 (42).png">
+                            <img src="../images/120.png">
+                            <img src="../images/033.png">
+                            <img src="../images/010.png">
+                        </div>
+                        <button class="btn footer-btn" type="submit">PORTFOLIO</button>
+                </div>
+                <div class="tweeter-stream flex-fill align-self-center">
+                        <h4 class="text-uppercase">tweeter stream</h4>
+                        <div class="footer-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <a href="#">
+                                    4 Minutes ago..
+                                </a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <a href="#">
+                                    4 Minutes ago..
+                                </a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <a href="#">
+                                    4 Minutes ago..
+                                </a>
+                            </p>
+                        </div>
+                        <button class="btn footer-btn" type="submit">FOLOW US</button>
+                </div>
+            </div>
+        </section>
+        <section class="footer-wrapper-bottom w-100">
+            <div class="footer-bottom mx-auto d-flex align-items-center h-100 justify-content-between">
+                <p>All Copyrights Reserved | 2010 | WebsiteName</p>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Portfolio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
