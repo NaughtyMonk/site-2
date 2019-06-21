@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- подключение css-файла -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+    integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <!-- подключение нужной версии jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" 
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <!-- подключение popper.js, необходимого для корректной работы некоторых плагинов Bootstrap 4 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" 
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <!-- подключение js-файла -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="max-width">
+        <div class="header-top d-flex  mx-auto justify-content-between">
+            <div class="navbar logo p-0">
+                <a href="#" class="navbar-brand">
+                    <img  src="../images/sitename.png">
+                </a>
+            </div>
+            <div class="soc-icons align-self-center">
+                <img src="../icons/line.png">
+                <a href="#"><img src="../icons/Layer 1.png"></a>
+                <a href="#"><img src="../icons/message.png"></a>
+                <a href="#"><img src="../icons/2round.png"></a>
+                <a href="#"><img src="../icons/whatsup.png"></a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light header-bottom-wrapper">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> 
+            <div class="collapse navbar-collapse header-bottom flex-grow-0 mx-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white text-uppercase pl-0" href="#">
+                            home 
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-uppercase" href="#">
+                            about
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link text-white text-uppercase">
+                            portfolio
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-uppercase" href="#">
+                            blog
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white text-uppercase" href="#">
+                            contact
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0 search-form">
+                    <label for="search">
+                        <a class="nav-link text-white text-uppercase font-weight-bold">
+                                search
+                            </a>
+                        </label>
+                    <input class="form-control " maxlength="17" type="search" id="search" aria-label="Search">
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="slider d-flex justify-content-center ">
+            <div class="slider-card align-self-center">
+                <div class="card border-0 h-100  card-footer-bg">
+                    <div class="card-body rounded-bottom card-body-bg">
+                        <div class="wrapper-card-body">
+                            <h4 class="text-uppercase">
+                                welcome to our site
+                            </h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                Tenetur animi blanditiis rem facilis nulla porro repudiandae
+                                aperiam quas hic veritatis delectus, maxime earum 
+                            </p>
+                            <button class="btn text-uppercase">learn more</button>
+                            <button class="btn text-uppercase">our work</button>
+                        </div>
+                    </div>
+                    <div class="card-footer border-top-0">
+                        <div class="wrapper-card-footer d-flex">
+                            <a class="align-self-center">You're here: </a>
+                            <a href="#" class="align-self-center">Home</a>
+                            <a class=" align-self-center">></a>
+                            <a href="#" class="align-self-center position-squre">Welcome.. <div class="squre"></div></a>
+                        </div>
+                    </div>
+                    <div class="card-images">
+                        <img src="../images/slider1.png" class="card-image-first">
+                        <img src="../images/slider2.png" class="card-image-second">
+                        <!-- <div class="squre"></div> -->
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <div class="slider-bottom-border"></div>
+        <section class="site-inform d-flex">
+            <aside class="blog d-flex">
+                <div class="wrapper-blog align-self-center">
+                    <h4 class="text-uppercase">from the blog</h4>
+                    <h3 class="text-capitalize">blog post name here</h3>
+                    <a href="#">October 15th 2010</a>
+                    <span class="sleh-line">/</span>
+                    <a href="#">7 comments</a>
+                    <div class="w-100">
+                        <a href="#"><img src="../images/img.png" ></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eum enim voluptates doloremque exercitationem expedita magnam 
+                        odio fuga? Autem nam suscipit provident facilis earum sunt, 
+                        numquam voluptatibus quasi sed nobis minus.
+                            <a href="#">
+                                Continue reading...
+                            </a>
+                    </p> 
+                    <h3 class="text-capitalize">blog post name here</h3>
+                    <a href="#">October 15th 2010</a>
+                    <span class="sleh-line">/</span>
+                    <a href="#">7 comments</a>
+                    <div class="w-100">
+                        <a href="#"><img src="../images/095.png" ></a>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Eum enim voluptates doloremque exercitationem expedita magnam 
+                        odio fuga? Autem nam suscipit provident facilis earum sunt, 
+                        numquam voluptatibus quasi sed nobis minus.
+                            <a href="#">
+                                Continue reading...
+                            </a>
+                    </p>
+                    <button class="btn rounded-0 btn-bg float-right">THE BLOG</button>      
+                </div>
+            </aside>
+                <div class="line-light"></div>
+                <div class="line-dark"></div>
+            <section class="sidebar d-flex">
+                <div class="wrapper-sidebar align-self-center">
+                    <div class="tabs d-flex flex-wrap tabs-border rounded">
+                        <input id="tab1" type="radio" name="tabs" checked>
+                        <label for="tab1" title="Вкладка 1" class="flex-fill tab1 rounded-left">Comments</label>
+                        <input id="tab2" type="radio" name="tabs">
+                        <label for="tab2" title="Вкладка 2"class="flex-fill">Categories</label> 
+                        <input id="tab3" type="radio" name="tabs">
+                        <label for="tab3" title="Вкладка 3" class="flex-fill rounded-right">Archives</label>
+                        <section id="content-tab1" class="w-100  tab-top">
+                        <p>
+                            Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, 
+                            vel illum dolore eu feugiat nulla 
+                        </p>
+                        </section>  
+                        <!-- <div class="tabs-line w-100"></div> -->
+                        <section id="content-tab1" class="w-100 tab-bottom">
+                            <p>
+                                Duis autem dolor in hendrerit in vulputate velit esse molestie consequat, 
+                                vel illum dolore eu feugiat 
+                            </p>
+                        </section>  
+                        <section id="content-tab2" class="w-100 tab-top">
+                            <p>
+                                Здесь размещаете любое содержание....
+                            </p>
+                        </section> 
+                        <!-- <div class="tabs-line w-100"></div> -->
+                        <section id="content-tab2" class="w-100 tab-bottom">
+                            <p>
+                                Здесь размещаете любое содержание....
+                            </p>
+                        </section> 
+                        <section id="content-tab3" class="w-100 tab-top">
+                            <p>
+                                Здесь размещаете любое содержание....
+                            </p>
+                        </section>
+                        <!-- <div class="tabs-line w-100"></div> -->
+                        <section id="content-tab3" class="w-100 tab-bottom">
+                            <p>
+                                Здесь размещаете любое содержание....
+                            </p>
+                        </section>
+                </div>
+                <h4 class="text-uppercase">who we are</h4>
+                <div class="sidebar-img">
+                    <a href="#"><img src="../images/sidebar.png" class="w-100"></a>
+                </div>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. , consectetur adipisicing elit... 
+                <a href="#">Read More!</a>
+                </p>
+                <h4 class="text-uppercase">sponsors</h4>
+                <div class="sponsors d-flex justify-content-between">
+                    <img src="../images/Adidas-Logo.png" class="flex-fill">
+                    <img src="../images/line.png" class="line-sponsor h-50 align-self-center">
+                    <img src="../images/Nike-logo.png" class="flex-fill">
+                </div>
+            </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-wrapper-top w-100">
+            <div class="footer-top d-flex mx-auto h-100">
+                <div class="footer-contact flex-fill align-self-center">
+                    <h4 class="text-uppercase">get a free quote</h4>
+                    <form class="d-flex justify-content-between flex-wrap">
+                        <input class="footer-input-name" placeholder="Your Name" type="text" maxlength="15">
+                        <input class="footer-input-last-name" placeholder="Last Name" type="text" maxlength="15">
+                        <textarea class="footer-textarea w-100" placeholder="Bla Bla" maxlength="35"></textarea>
+                        <input class="footer-email w-100" placeholder="Your E-mail adress" type="text" maxlength="15">
+                    </form>
+                    <button class="btn footer-btn" type="submit">SUBMIT</button>
+                </div>
+                <div class="footer-recent-projects flex-fill align-self-center">
+                        <h4 class="text-uppercase">our recent projects</h4>
+                        <div class="d-flex flex-wrap footer-images justify-content-between">
+                            <a href="#"><img src="../images/wallpapers mix 157 (42).png"></a>
+                            <a href="#"><img src="../images/120.png"></a>
+                            <a href="#"><img src="../images/033.png"></a>
+                            <a href="#"><img src="../images/010.png"></a>
+                        </div>
+                        <button class="btn footer-btn" type="submit">PORTFOLIO</button>
+                </div>
+                <div class="tweeter-stream flex-fill align-self-center">
+                        <h4 class="text-uppercase">tweeter stream</h4>
+                        <div class="footer-text">
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <a href="#">
+                                    4 Minutes ago..
+                                </a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <a href="#">
+                                    4 Minutes ago..
+                                </a>
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                <a href="#">
+                                    4 Minutes ago..
+                                </a>
+                            </p>
+                        </div>
+                        <button class="btn footer-btn" type="submit">FOLOW US</button>
+                </div>
+            </div>
+        </section>
+        <section class="footer-wrapper-bottom w-100">
+            <div class="footer-bottom mx-auto d-flex align-items-center h-100 justify-content-between">
+                <p>All Copyrights Reserved | 2010 | WebsiteName</p>
+                <nav class="nav">
+                    <a href="#" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">About</a>
+                    <a href="#" class="nav-link">Portfolio</a>
+                    <a href="#" class="nav-link">Blog</a>
+                    <a href="#" class="nav-link">Contact</a>
+                </nav>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
